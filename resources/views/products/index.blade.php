@@ -46,8 +46,8 @@
                     <td>{{ $product->name }}</td>
                     <td>{{ $product->category->name }}</td>
                     <td>{{ $product->subcategory->name }}</td>
-                    <td>${{ number_format($product->old_price, 2) }}</td>
-                    <td>${{ number_format($product->new_price, 2) }}</td>
+                    <td>৳{{ number_format($product->old_price, 2) }}</td>
+                    <td>৳{{ number_format($product->new_price, 2) }}</td>
                     <td>
                         <a href="{{ route('products.show.slug', $product->slug) }}" class="btn btn-sm btn-info">View</a>
                         <a href="{{ route('products.edit', $product) }}" class="btn btn-sm btn-warning">Edit</a>

@@ -18,7 +18,7 @@ class UpdateProductRequest extends FormRequest
             'subcategory_id' => 'required|exists:subcategories,id',
             'name' => 'required|max:255',
             'description' => 'required',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
             'old_price' => 'required|numeric',
             'new_price' => 'required|numeric',
         ];

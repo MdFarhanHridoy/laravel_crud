@@ -18,10 +18,10 @@
         <p>{{ $product->description }}</p>
         <hr>
         <div class="d-flex align-items-center gap-3">
-            <h3 class="text-danger">${{ number_format($product->new_price, 2) }}</h3>
-            <h5 class="text-muted text-decoration-line-through">${{ number_format($product->old_price, 2) }}</h5>
+            <h3 class="text-danger">৳{{ number_format($product->new_price, 2) }}</h3>
+            <h5 class="text-muted text-decoration-line-through">৳{{ number_format($product->old_price, 2) }}</h5>
         </div>
-        <p class="text-success">Save ${{ number_format($product->old_price - $product->new_price, 2) }}</p>
+        <p class="text-success">Save ৳{{ number_format($product->old_price - $product->new_price, 2) }}</p>
         <hr>
         <a href="{{ route('products.index') }}" class="btn btn-secondary">Back to Products</a>
         <a href="{{ route('products.edit', $product) }}" class="btn btn-warning">Edit Product</a>
