@@ -40,7 +40,7 @@ class ProductController extends Controller
             'subcategory_id' => $request->subcategory_id,
             'name' => $request->name,
             'slug' => Str::slug($request->name),
-            'description' => $request->description,
+            'description' => $request->description ?? '',
             'image' => $imagePath,
             'old_price' => $request->old_price,
             'new_price' => $request->new_price,
@@ -69,7 +69,7 @@ class ProductController extends Controller
             'subcategory_id' => $request->subcategory_id,
             'name' => $request->name,
             'slug' => Str::slug($request->name),
-            'description' => $request->description,
+            'description' => $request->description ?? '',
             'old_price' => $request->old_price,
             'new_price' => $request->new_price,
         ];
