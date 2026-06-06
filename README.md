@@ -2,6 +2,10 @@
 
 A Laravel-based E-commerce Management Platform for managing categories, subcategories, and products.
 
+## Repository
+
+[https://github.com/MdFarhanHridoy/laravel_crud](https://github.com/MdFarhanHridoy/laravel_crud)
+
 ## Features
 
 - Category Management (CRUD)
